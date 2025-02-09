@@ -22,7 +22,7 @@ function Project() {
           </motion.div>
         </div>
         <h2 className="text-xl font-semibold text-gray-950 dark:text-white mb-4">
-          Sorry, this project is not available at the moment. Stay tune will upload our project  
+          Sorry, this project will upload soon.
         </h2>
         <p className="text-gray-600 dark:text-gray-300 text-sm">
           Please check back later. We apologize for the inconvenience.
