@@ -1,33 +1,36 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { FaRegSadTear } from 'react-icons/fa';
+import { FaCreditCard } from 'react-icons/fa';
 
 function Project() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-800">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-        className="bg-gray-100 dark:bg-gray-800 py-12 shadow-lg rounded-lg border-t-4 border-gray-300 dark:border-gray-700 max-w-md mx-auto text-center"
-      >
-        <div className="mt-5 flex justify-center items-center">
-          <motion.div
-            className="text-6xl text-gray-600 dark:text-gray-300 mb-4"
-            initial={{ y: -10 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <FaRegSadTear />
-          </motion.div>
+    <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 p-6">
+      {/* Project Card */}
+      <div className="bg-white dark:bg-gray-800 py-8 px-6 shadow-lg rounded-lg border-t-4 border-blue-500 dark:border-blue-400 max-w-md w-full text-center transform transition duration-500 hover:scale-105 animate-fadeInScale">
+        {/* Icon */}
+        <div className="text-6xl text-blue-600 dark:text-blue-400 mb-4 animate-bounce">
+          <FaCreditCard />
         </div>
-        <h2 className="text-xl font-semibold text-gray-950 dark:text-white mb-4">
-          Sorry, this project is not available at the moment.
+
+        {/* Project Title */}
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+          Credit Card Generator
         </h2>
-        <p className="text-gray-600 dark:text-gray-300 text-sm">
-          Please check back later. We apologize for the inconvenience.
+
+        {/* Project Description */}
+        <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+          A sleek credit card generator with animations and interactive design.
         </p>
-      </motion.div>
+
+        {/* Link Button */}
+        <a
+          href="https://your-project-link.com" // Replace with your actual project link
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-medium shadow-md transition duration-300 hover:bg-blue-700 hover:shadow-lg"
+        >
+          View Project
+        </a>
+      </div>
     </div>
   );
 }
