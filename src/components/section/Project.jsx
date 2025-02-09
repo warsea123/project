@@ -18,7 +18,7 @@ function Project() {
 
         {/* Project Description */}
         <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
-          A sleek credit card generator with animations and interactive design.
+          Jammel
         </p>
 
         {/* Link Button */}
