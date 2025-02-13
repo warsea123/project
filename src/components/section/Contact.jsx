@@ -32,7 +32,7 @@ const Contact = () => {
         'service_7dy9txi',
         'template_1jnfl3m',
         formData,
-        'jammelbrona@gmail.com'
+        'GRhVbM7s1LySeKj1d'
       )
       .then(
         (response) => {
@@ -56,7 +56,7 @@ const Contact = () => {
   });
 
   return (
-    <section className="py-20 bg-gray-100 dark:bg-gray-800" ref={ref}>
+    <section className="py-20 bg-white dark:bg-gray-900" ref={ref}>
       <div
         className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in ${
           inView ? 'visible' : ''
