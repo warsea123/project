@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaGithub, FaEnvelope, FaSun, FaMoon } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 
+
 function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(() => localStorage.getItem('theme') === 'dark');

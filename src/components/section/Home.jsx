@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 function Home({ handleType, myProfile }) {
   const [nameText, setName] = useState("");
   const [isVisible, setIsVisible] = useState(false);
+
   let fullName = "Jammel M. Brona";
 
   useEffect(() => {
