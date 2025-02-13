@@ -27,11 +27,19 @@ const Contact = () => {
     e.preventDefault();
     setSending(true);
 
+    const templateParams = {
+      to_name: "Jammel M. Broña",  // The name of the person receiving the email
+      from_name: formData.name,   // Sender's name from form input
+      from_email: formData.email, // Sender's email from form input
+      message: formData.message,  // Message content from form input
+    }
+
+
     emailjs
       .send(
         'service_7dy9txi',
         'template_1jnfl3m',
-        formData,
+        templateParams,
         'GRhVbM7s1LySeKj1d'
       )
       .then(
