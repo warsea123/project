@@ -3,8 +3,10 @@ import { AiOutlineUser, AiOutlineMail, AiOutlineMessage } from 'react-icons/ai';
 import { useSpring, animated } from '@react-spring/web';
 import emailjs from 'emailjs-com';
 import { useInView } from 'react-intersection-observer';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -48,6 +50,10 @@ const Contact = () => {
           setSubmitted(true);
           setFormData({ name: '', email: '', message: '' });
           setSending(false);
+
+          setTimeOut(()=>{
+            navigate('/')
+          }, 3000)
         },
         (error) => {
           console.log('Failed to send message:', error);
