@@ -41,7 +41,7 @@ function LoadingScreen({ onComplete }) {
             clearInterval(progressInterval);
             if (timeout) clearTimeout(timeout);
         };
-    }, [onComplete]);
+    }, [onComplete, fullText]);
 
     return (
         <motion.div
