@@ -7,7 +7,7 @@ function Project() {
         { 
             title: "Credit Card Generator", 
             description: "Generate and design virtual credit cards with animations.",
-            link: "https://warsea123.github.io/project/",
+            link: "https://warsea123.github.io/project1/",
             icon: <FaCreditCard />
         },
         { 
